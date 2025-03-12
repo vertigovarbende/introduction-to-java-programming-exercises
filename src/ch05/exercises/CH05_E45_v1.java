@@ -38,9 +38,8 @@ public class CH05_E45_v1 {
 
 		for (int i = 0; i < numbers.length; ++i)
 			powAddition += pow(numbers[i], 2);
-		
+
 		return sqrt((powAddition - powMean) / (numbers.length - 1));
 
 	}
-
 }
