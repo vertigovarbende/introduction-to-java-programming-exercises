@@ -1,6 +1,6 @@
 package ch07.introduction;
 
-import java.lang.System;
+import static java.lang.System.*;
 
 public class CopyingArrays {
 
@@ -37,6 +37,29 @@ public class CopyingArrays {
 //		displayArray(sourceArray);
 //		System.out.print("targetArray: ");
 //		displayArray(targetArray);
+
+		// example 7.13
+
+//		int[] source = {3, 4, 5};
+//		int[] t = new int[source.length];
+//		arraycopy(source, 0, t, 0, 3);
+//		System.out.print("source: ");
+//		displayArray(source);
+//		System.out.print("target: ");
+//		displayArray(t);
+
+		// example 7.14
+
+//		int[] myList;
+//		myList = new int[10];
+//		// sometime later you want to assign a new array to myList
+//		myList = new int[20];
+//		displayArray(myList);
+
+		// The size of object isn't changed! object itself is changed!
+//		int[] myList = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//		myList = new int[] {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30};
+//		displayArray(myList);
 
 	}
 
