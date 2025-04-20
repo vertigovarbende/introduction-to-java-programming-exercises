@@ -11,7 +11,7 @@ public class DeckOfCards {
 
 		initializeDeck(deck);
 
-		// display the first for cards
+		// display the first four cards
 		for (int i = 0; i < 4; ++i) {
 			String suit = suits[deck[i] / 13];
 			String rank = ranks[deck[i] % 13];

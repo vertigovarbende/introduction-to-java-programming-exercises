@@ -13,9 +13,9 @@ public class CH07_E27_v1 {
 		int[] list2 = new int[n];
 
 		System.out.println("Enter list1");
-		initializeArray(list1);
+		initializeList(list1);
 		System.out.println("Enter list2");
-		initializeArray(list2);
+		initializeList(list2);
 
 		sortList(list1);
 		sortList(list2);
@@ -51,10 +51,10 @@ public class CH07_E27_v1 {
 		return true;
 	}
 
-	public static void initializeArray(int[] array) {
-		for (int i = 0; i < array.length; ++i) {
+	public static void initializeList(int[] list) {
+		for (int i = 0; i < list.length; ++i) {
 			System.out.print("[" + i + "]: ");
-			array[i] = SCAN.nextInt();
+			list[i] = SCAN.nextInt();
 		}
 	}
 
