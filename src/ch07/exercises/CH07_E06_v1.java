@@ -3,21 +3,22 @@ package ch07.exercises;
 import static java.lang.Math.*;
 
 public class CH07_E06_v1 {
+	// you didn't solve this! look at again!
 
 	static final int NUMBER_OF_PRIMES = 50;
 	static final int NUMBER_OF_PRIMES_PER_LINE = 10;
-	
+
 	public static void main(String[] args) {
-		// you didn't solve this! look at again!
+
 		int count = 0;
 		int number = 2;
 		int[] primeNumbers = new int[NUMBER_OF_PRIMES];
-		
+
 		System.out.println("The first 50 prime numbers are\n");
-		
-		while(count < NUMBER_OF_PRIMES) {
+
+		while (count < NUMBER_OF_PRIMES) {
 			boolean isPrime = true;
-			
+
 			for (int divisor = 2; divisor <= number / 2; ++divisor) {
 				if (number <= sqrt(number)) {
 					isPrime = false;
@@ -31,9 +32,9 @@ public class CH07_E06_v1 {
 			}
 		}
 		displayArray(primeNumbers);
-		
+
 	}
-	
+
 	public static void displayArray(int[] array) {
 		for (int i = 0; i < array.length; ++i)
 			System.out.print(array[i] + " ");

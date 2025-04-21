@@ -20,7 +20,7 @@ public class PassingArraysToMethods {
 		 * an array; this reference value is passed to the method. Semantically, it can
 		 * be best described as pass-by-sharing, that is, the array in the method is the
 		 * same as the array being passed. Thus, if you change the array in the method,
-		 * you will see the change outside the method. Tha the following code, for
+		 * you will see the change outside the method. That the following code, for
 		 * example
 		 */
 

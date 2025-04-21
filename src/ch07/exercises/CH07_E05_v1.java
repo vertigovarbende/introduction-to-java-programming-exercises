@@ -3,11 +3,11 @@ package ch07.exercises;
 import java.util.Scanner;
 
 public class CH07_E05_v1 {
-
+	// you didn't solve this! look at again!
 	static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		// you didn't solve this! look at again!
+
 		int[] array = new int[10];
 		initializeArray(array);
 		displayArray(array);
