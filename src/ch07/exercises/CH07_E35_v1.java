@@ -5,6 +5,11 @@ import java.util.Random;
 
 public class CH07_E35_v1 {
 
+	/*
+	 * When a capital letter is entered, even though the letter is in the word, the
+	 * programme I wrote cannot find the word! solve this!
+	 */
+
 	static final Scanner SCAN = new Scanner(System.in);
 	static final Random RAND = new Random();
 
