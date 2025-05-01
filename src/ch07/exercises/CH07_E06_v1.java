@@ -3,7 +3,6 @@ package ch07.exercises;
 import static java.lang.Math.*;
 
 public class CH07_E06_v1 {
-	// you didn't solve this! look at again!
 
 	static final int NUMBER_OF_PRIMES = 50;
 	static final int NUMBER_OF_PRIMES_PER_LINE = 10;
@@ -19,8 +18,8 @@ public class CH07_E06_v1 {
 		while (count < NUMBER_OF_PRIMES) {
 			boolean isPrime = true;
 
-			for (int divisor = 2; divisor <= number / 2; ++divisor) {
-				if (number <= sqrt(number)) {
+			for (int divisor = 2; divisor <= sqrt(number); ++divisor) {
+				if (number % divisor == 0) {
 					isPrime = false;
 					break;
 				}

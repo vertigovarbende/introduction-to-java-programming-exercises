@@ -6,8 +6,18 @@ import java.util.Random;
 public class CH07_E35_v1 {
 
 	/*
+	 * problem-1	// done!
+	 * 
 	 * When a capital letter is entered, even though the letter is in the word, the
 	 * programme I wrote cannot find the word! solve this!
+	 */
+
+	/*
+	 * problem-2
+	 * 
+	 * word like 'precedence', doesn't work very well because the programme I wrote
+	 * just searches 2 times.
+	 * 
 	 */
 
 	static final Scanner SCAN = new Scanner(System.in);
@@ -29,7 +39,7 @@ public class CH07_E35_v1 {
 			System.out.print("(Guess) Enter a letter in word ");
 			display(starArray);
 			System.out.print(" > ");
-			letter = SCAN.next().charAt(0);
+			letter = SCAN.next().toLowerCase().charAt(0);
 			if (isEntered(letter, starArray))
 				System.out.print("\t" + letter + " is already in the word\n");
 			else {

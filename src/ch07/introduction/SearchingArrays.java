@@ -52,7 +52,7 @@ public class SearchingArrays {
 		// search for the key
 		// only in the second half of the array.
 
-//		int[] list = { 2, 4, 7, 10, 11, 45, 50, 59, 60, 66, 69, 70, 79 };
+//		int[] list = { 2, 2, 4, 7, 10, 11, 45, 50, 59, 60, 66, 69, 70, 79 };
 //		int i = binarySearch(list, 2); // 0
 //		int j = binarySearch(list, 11); // 4
 //		int k = binarySearch(list, 12); // -6
@@ -71,8 +71,7 @@ public class SearchingArrays {
 		 */
 
 		// Example 7.21 ???
-		
-		
+
 	}
 
 	public static int linearSearch(int[] list, int key) {
