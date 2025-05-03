@@ -12,35 +12,9 @@ public class CH07_E32_v1 {
 		int n = SCAN.nextInt();
 		int[] list = new int[n];
 
-		initializeList(list);
-		displayList(list);
-		
-
-	}
-
-	public static int partition(int[] list) {
-		int pivot = list[0], temp = 0;
-		for (int i = 1; i < list.length; ++i) {
-			if (list[i] <= pivot) {
-				temp = list[i];
-				list[i] = pivot;
-				list[i - 1] = temp;
-			}
-		}
-		return pivot;
-	}
-
-	public static void initializeList(int[] list) {
-		for (int i = 0; i < list.length; ++i) {
-			System.out.print("[" + i + "]: ");
+		for (int i = 0; i < list.length; i++) {
 			list[i] = SCAN.nextInt();
 		}
-		System.out.println();
-	}
 
-	public static void displayList(int[] list) {
-		for (int i = 0; i < list.length; ++i)
-			System.out.print(list[i] + " ");
-		System.out.println();
 	}
 }
