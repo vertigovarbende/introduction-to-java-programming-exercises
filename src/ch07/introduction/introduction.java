@@ -4,7 +4,7 @@ import java.util.Scanner;
 import static java.lang.Math.*;
 import java.util.Random;
 
-public class introduction {
+public class Introduction {
 
 	public static void main(String[] args) {
 

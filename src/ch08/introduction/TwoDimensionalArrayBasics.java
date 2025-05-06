@@ -31,33 +31,31 @@ public class TwoDimensionalArrayBasics {
 		System.out.println("(3)");
 		int[][] triangleArray = { { 1, 2, 3, 4, 5 }, { 2, 3, 4, 5 }, { 3, 4, 5 }, { 4, 5 }, { 5 } };
 		displayMatrix(triangleArray);
-		
+
 		// If you don't know the values in a ragged array in advance, but do know the
 		// sizes - say, the same
 		// as before - you can create a ragged array using the following syntax:
-		
+
 		int[][] triangleArray2 = new int[5][];
 		triangleArray2[0] = new int[5];
 		triangleArray2[1] = new int[4];
 		triangleArray2[2] = new int[3];
 		triangleArray2[3] = new int[2];
 		triangleArray2[4] = new int[1];
-		
+
 		triangleArray2[0][3] = 50;
 		triangleArray2[4][0] = 45;
 		displayMatrix(triangleArray2);
-		
-		// (8.1) 
+
+		// (8.1)
 		int[][] matrix3 = new int[4][5];
-		
+
 		// (8.2)
-		
+
 		// (8.3) error!
 		int[][] array3 = new int[5][6];
-		int[] x1 = {1, 2};
+		int[] x1 = { 1, 2 };
 //		array3[0] = x;
-
-		
 
 	}
 

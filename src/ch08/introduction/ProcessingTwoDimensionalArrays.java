@@ -48,6 +48,27 @@ public class ProcessingTwoDimensionalArrays {
 		randomShuffle(matrix);
 		displayMatrix(matrix);
 		System.out.println("total: " + sumAllElements(matrix));
+
+		// (8.5)
+		// 6 5
+		// 4 3
+		// 2 1
+		System.out.println("(8.5)");
+		int[][] array = { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+		for (int i = array.length - 1; i >= 0; --i) {
+			for (int j = array[i].length - 1; j >= 0; --j)
+				System.out.print(array[i][j] + " ");
+			System.out.println();
+		}
+
+		// (8.6)
+		// 9
+		System.out.println("(8.6)");
+		int sum = 0;
+		for (int i = 0; i < array.length; ++i)
+			sum += array[i][0];
+		System.out.println(sum);
+
 	}
 
 	// (1) initializing arrays with input values
