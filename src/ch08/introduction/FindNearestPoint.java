@@ -22,7 +22,7 @@ public class FindNearestPoint {
 	}
 
 	public static void initializePoints(double[][] points) {
-		System.out.println("Enter " + points.length + " points: ");
+		System.out.println("Enter " + points.length + " points ");
 		for (int i = 0; i < points.length; ++i) {
 			for (int j = 0; j < points[i].length; ++j) {
 				System.out.print("point[" + i + "][" + j + "]: ");
@@ -45,7 +45,6 @@ public class FindNearestPoint {
 				}
 			}
 		}
-
 		System.out.println("The closest two points are " + "(" + points[p1][0] + "," + points[p1][1] + ") and ("
 				+ points[p2][0] + "," + points[p2][1] + ")");
 	}
