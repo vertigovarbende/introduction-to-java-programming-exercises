@@ -109,7 +109,7 @@ public class Introduction {
 		/*
 		 * (8) Shifting elements: Sometimes you need to shift the elements left or
 		 * right. Here is an example of shifting the elements one position to the left
-		 * and filling the last element with the first element:f
+		 * and filling the last element with the first element:
 		 */
 		System.out.println("(8)");
 		double temp = myArray[0];
