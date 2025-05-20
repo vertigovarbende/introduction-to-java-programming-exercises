@@ -22,7 +22,7 @@ public class ArraysClass {
 		 * */
 		
 		
-		// (1) 'sort()' or 'parallelSort'
+		// (1) 'sort()' or 'parallelSort()'
 		// You can use these methods to sort a whole array or a partial array.
 		// parallelSort is more efficient if your computer has multiple processors.
 		System.out.println("(1) sort() and parallelSort()");

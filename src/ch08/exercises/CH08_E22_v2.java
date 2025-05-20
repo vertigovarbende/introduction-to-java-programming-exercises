@@ -1,6 +1,6 @@
 package ch08.exercises;
 
-public class CH08_E22_v1 {
+public class CH08_E22_v2 {		// check every row and column whether have 1s or not
 
 	static final int SIZE = 6;
 
@@ -8,18 +8,18 @@ public class CH08_E22_v1 {
 		int[][] matrix = new int[SIZE][SIZE];
 		initializeMatrix(matrix);
 		displayMatrix(matrix);
-		if (evenNumberOfOnes(matrix))
-			System.out.println("Every row and every column have an even number of 1s");
+		if (numberOfOnes(matrix))
+			System.out.println("Every row and every column have 1");
 		else
-			System.out.println("Every row and every column don't have an even number of 1s");
+			System.out.println("Every row and every column don't have 1");
 
-//		int[][] matrix7 = {
-//				{1, 0, 0, 1},
-//				{0, 1, 1, 0},
-//				{0, 1, 0, 1},
-//				{1, 0, 1, 0}
-//			};
-//		System.out.println(evenNumberOfOnes(matrix7)); // true
+//		int[][] matrix7 = { 
+//				{ 0, 0, 0, 0 }, 
+//				{ 0, 0, 0, 0 }, 
+//				{ 0, 0, 0, 0 }, 
+//				{ 0, 0, 0, 0 }, 
+//				};
+//		System.out.println(evenNumberOfOnes(matrix7)); // false
 //		
 //		int[][] matrix3 = {
 //				{0, 0, 0, 1},
@@ -27,28 +27,29 @@ public class CH08_E22_v1 {
 //				{0, 1, 0, 0},
 //				{1, 0, 0, 0}
 //				};
-//		System.out.println(evenNumberOfOnes(matrix3)); // false
+//		System.out.println(evenNumberOfOnes(matrix3)); // true
 
 	}
 
-	public static boolean evenNumberOfOnes(int[][] matrix) {
+	public static boolean numberOfOnes(int[][] matrix) {
 		int count = 0;
 		for (int i = 0; i < matrix.length; ++i) {
 			count = 0;
 			for (int j = 0; j < matrix[i].length; ++j) {
 				if (matrix[i][j] == 1)
-					++count;
+					count = 1;
 			}
-			if (count % 2 != 0)
+			if (count == 0)
 				return false;
 		}
+
 		for (int i = 0; i < matrix.length; ++i) {
 			count = 0;
 			for (int j = 0; j < matrix[i].length; ++j) {
 				if (matrix[j][i] == 1)
-					++count;
+					count = 1;
 			}
-			if (count % 2 != 0)
+			if (count == 0)
 				return false;
 		}
 		return true;
