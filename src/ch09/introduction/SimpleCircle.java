@@ -2,6 +2,7 @@ package ch09.introduction;
 
 public class SimpleCircle {
 
+	
 	double radius;
 	
 	SimpleCircle() {
