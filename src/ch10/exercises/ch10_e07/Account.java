@@ -1,8 +1,8 @@
-package ch09.exercises.ch09_e07;
+package ch10.exercises.ch10_e07;
 
 import java.util.Date;
 
-public class Account{
+public class Account implements Operations {
 
 	// The private instance variables
 	private int id; // id for the account
