@@ -89,7 +89,7 @@ public class Account implements Operations {
 			System.out.println("you don't have enough money in your account");
 		} else {
 			balance -= amount;
-			System.out.println("you withdrew $" + amount + "from your account");
+			System.out.println("you withdrew $" + amount + " from your account");
 		}
 	}
 
