@@ -1,4 +1,4 @@
-package ch10.exercises.ch10_e04;
+package ch10.exercises.ch10_e12;
 
 import static java.lang.Math.*;
 
@@ -47,5 +47,6 @@ public class MyPoint {
 	// coordinates
 	public double distance(double x, double y) {
 		return sqrt(pow(x - this.x, 2) + pow(y - this.y, 2));
-	}	
+	}
+	
 }
