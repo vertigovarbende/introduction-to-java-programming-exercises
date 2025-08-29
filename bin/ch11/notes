@@ -1,0 +1,59 @@
+notes
+
+// more in subclass
+# Contrary to the conventional interpretation, a subclass is not a subset of its superclass. 
+In fact, a subclass usually contains more information and methods than its superclass.
+
+
+// private data fields
+# Private data fields in a superclass are not accessible outside the class. Therefore, 
+they cannot be used directly in a subclass. They can, however, be accessed/mutated 
+through public accessors/mutators if defined in the superclass
+
+// nonextensible-is-a
+# Not all is-a relationships should be modeled using inheritance. For example, a square 
+is a rectangle, but you should not extend a Square class from a Rectangle class, 
+because the width and height properties are not appropriate for a square. Instead, 
+you should define a Square class to extend the GeometricObject class and define 
+the side property for the side of a square
+
+// no blind extension
+# Inheritance is used to model the is-a relationship. Do not blindly extend a class just 
+for the sake of reusing methods. For example, it makes no sense for a Tree class to 
+extend a Person class, even though they share common properties such as height 
+and weight. A subclass and its superclass must have the is-a relationship
+
+// single inheritance - multiple inheritance
+# Some programming languages allow you to derive a subclass from several classes. 
+This capability is known as multiple inheritance. Java, however, does not allow multiple inheritance. 
+A Java class may inherit directly from only one superclass. This 
+restriction is known as single inheritance. If you use the extends keyword to define 
+a subclass, it allows only one parent class. Nevertheless, multiple inheritance can be 
+achieved through interfaces
+
+// super
+# You must use the keyword super to call the superclass constructor, and the call must 
+be the first statement in the constructor. Invoking a superclass constructor’s name in a 
+subclass causes a syntax error.
+
+// no-arg constructor
+# If a class is designed to be extended, it is better to provide a no-arg constructor to avoid 
+programming errors. 
+
+// override accessible instance method
+# An instance method can be overridden only if it is accessible. 
+Thus a private method cannot be overridden, because it is not accessible outside its own class. 
+If a method defined in a subclass is private in its superclass, the two methods are completely unrelated.
+
+// cannot override static method
+# Like an instance method, a static method can be inherited. However, a static method 
+cannot be overridden. If a static method defined in the superclass is redefined in a 
+subclass, the method defined in the superclass is hidden. The hidden static methods 
+can be invoked using the syntax SuperClassName.staticMethodName.
+
+// overloading vs overriding
+# Overridden methods are in different classes related by inheritance; 
+overloaded methods can be either in the same class or different classes related by inheritance.
+
+# Overridden methods have the same signature and return type; overloaded methods 
+have the same name but a different parameter list
