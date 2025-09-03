@@ -92,6 +92,19 @@ Test with the Circle class in (a) and in (b), respectively
 Arrays.sort(array) method. To sort an array list, use the java.util.Collections.
 sort(arraylist) method
 
+// 'protected'
+# A subclass may override a protected method defined in its superclass and change its 
+visibility to public. However, a subclass cannot weaken the accessibility of a method 
+defined in the superclass. For example, if a method is defined as public in the superclass, 
+it must be defined as public in the subclass.
+
+// 'final'
+# Neither a final class nor a final method can be extended. A final data field is a 
+constant.
+# The modifiers public, protected, private, static, abstract, and final are 
+used on classes and class members (data and methods), except that the final modifier 
+can also be used on local variables in a method. A final local variable is a constant 
+inside a method.
 
 
 

@@ -33,7 +33,7 @@ public class CH02_E19_v1 {
 		if (check < 0)
 			System.out.println("The three points are on the same line");
 		else
-			System.out.format("The are of the triangle is %.2f", sqrt(check));
+			System.out.format("The area of the triangle is %.2f", sqrt(check));
 
 	}
 }
