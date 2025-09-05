@@ -71,6 +71,7 @@ public class Person {
 	}
 
 	// toString()
+	@Override
 	public String toString() {
 		return "Person[name=" + name
 				+ ",address=" + address
