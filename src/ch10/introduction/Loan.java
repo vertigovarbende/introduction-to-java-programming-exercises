@@ -70,4 +70,12 @@ public class Loan {
 	public java.util.Date getLoanDate() {
 		return loanDate;
 	}
+	
+	public String toString() {
+		return "Loan[annualInterestRate=" + annualInterestRate
+				+ ",numberOfYears=" + numberOfYears
+				+ ",loanAmount=" + loanAmount
+				+ ",loanDate=" + loanDate
+				+ "]";
+	}
 }
