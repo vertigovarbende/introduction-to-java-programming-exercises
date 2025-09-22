@@ -1,0 +1,16 @@
+notes
+
+// introduction
+# Exception handling enables a program to deal with exceptional situations and 
+continue its normal execution.
+# Runtime errors occur while a program is running if the JVM detects an operation that is 
+impossible to carry out. 
+# In Java, runtime errors are thrown as exceptions. An exception is an object that represents 
+an error or a condition that prevents execution from proceeding normally. If the exception is 
+not handled, the program will terminate abnormally
+
+// key benefit
+# This is typically the case for the library methods. The library method can detect the error, but only the caller 
+knows what needs to be  done when an error occurs. The key benefit of exception handling is separating the detection 
+of an error (done in a called method) from the handling of an error (done in the calling 
+method)
