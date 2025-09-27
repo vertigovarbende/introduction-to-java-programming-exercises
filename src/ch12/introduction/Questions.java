@@ -1,5 +1,8 @@
 package ch12.introduction;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Questions {
 
 	public static void main(String[] args) {
@@ -11,10 +14,12 @@ public class Questions {
 		System.out.println("\n12.5");
 		// 12.5
 		try {
-			int value2 = 50;
-//			int value2 = 30;
+//			int value2 = 50;
+			int value2 = 30;
 			if (value2 < 40)
 				throw new Exception("value is too small");
+			System.out.println("a");
+			System.out.println("b");
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
 		}
@@ -28,6 +33,30 @@ public class Questions {
 				System.out.println(1 / 0);
 			} catch (Exception ex) {
 			}
+		}
+		try {
+			method();
+			System.out.println("After the method call");
+		} catch (ArithmeticException ex) {
+			System.out.println("ArithmeticException");
+		} catch (RuntimeException ex) {
+			System.out.println("RuntimeException");
+		} catch (Exception e) {
+			System.out.println("Exception");
+		}
+		
+	}
+
+	public static void method() throws Exception {
+		System.out.println(1 / 0);
+	}
+
+	public void m(int value) {
+		try {
+			if (value < 40)
+				throw new Exception("value is too small");
+		} catch(Exception ex) {
+			
 		}
 	}
 }

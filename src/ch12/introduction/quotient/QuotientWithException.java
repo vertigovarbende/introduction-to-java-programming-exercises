@@ -1,5 +1,6 @@
 package ch12.introduction.quotient;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class QuotientWithException {
@@ -18,6 +19,7 @@ public class QuotientWithException {
 		} catch(ArithmeticException ex) {
 			System.out.println("Exception: an integer cannot be divided by zero");
 			System.out.println(ex.getMessage());
+			ex.printStackTrace();
 		}
 		System.out.println("Execution continues");
 	}

@@ -1,5 +1,14 @@
 notes
 
+IMPORTANT!
+----------
+
+****** floating-point arithmetic does not throw exceptions ******
+****** If a method does not declare exceptions in the superclass, you cannot override it to 
+declare exceptions in the subclass. ******
+
+
+
 // introduction
 # Exception handling enables a program to deal with exceptional situations and 
 continue its normal execution.
@@ -14,3 +23,29 @@ not handled, the program will terminate abnormally
 knows what needs to be  done when an error occurs. The key benefit of exception handling is separating the detection 
 of an error (done in a called method) from the handling of an error (done in the calling 
 method)
+
+// Exception types
+# Exceptions are objects, and objects are defined using classes. The root class for 
+exceptions is java.lang.Throwable.
+
+# The Throwable class is the root of exception classes. All Java exception classes inherit 
+directly or indirectly from Throwable. You can create your own exception classes by extend
+ing Exception or a subclass of Exception
+
+# The exception classes can be classified into three major types: system errors, exceptions, 
+and runtime exceptions.
+
+// checked-unchecked exceptions
+# RuntimeException, Error, and their subclasses are known as unchecked exceptions. All 
+other exceptions are known as checked exceptions, meaning that the compiler forces the 
+programmer to check and deal with them in a try-catch block or declare it in the method 
+header. 
+
+// catch block
+# Various exception classes can be derived from a common superclass. If a catch block 
+catches exception objects of a superclass, it can catch all the exception objects of the 
+subclasses of that superclass.
+
+# The order in which exceptions are specified in catch blocks is important. A compile 
+error will result if a catch block for a superclass type appears before a catch block for a 
+subclass type.
