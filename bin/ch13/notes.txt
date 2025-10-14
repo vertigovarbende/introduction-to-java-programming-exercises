@@ -1,0 +1,19 @@
+notes
+
+// interfaces
+# A superclass defines common behavior for related subclasses. An interface can be 
+used to define common behavior for classes (including unrelated classes).
+
+// abstract class
+# An abstract class cannot be used to create objects. An abstract class can contain 
+abstract methods, which are implemented in concrete subclasses
+
+# In the inheritance hierarchy, classes become more specific and concrete with each new sub
+class. If you move from a subclass back up to a superclass, the classes become more general 
+and less specific. Class design should ensure that a superclass contains common features of its 
+subclasses. Sometimes a superclass is so abstract that it cannot be used to create any specific 
+instances. Such a class is referred to as an abstract class.
+
+// UML - Class Diagram
+# In UML graphic notation, the names of abstract classes and their abstract meth
+ods are italicized

@@ -28,7 +28,6 @@ public class StackOfIntegers {
 	}
 
 	/** Return and remove the top element from the stack */
-
 	public int pop() {
 		return elements[--size];
 	}

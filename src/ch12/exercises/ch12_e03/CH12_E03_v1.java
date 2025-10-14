@@ -28,6 +28,7 @@ public class CH12_E03_v1 {
 		}
 
 		displayArray(randArray);
+		
 	}
 
 	public static int[] createArray() {
